@@ -13,7 +13,7 @@ This version does not attempt to write to `/proc/self/mem`, so it should
 be viable on CentOS/RHEL boxes. Still relies on ptrace, so it may fail if ptrace
 is restricted on the target system.
 # Pre-Exploit
-Find a SUID executable that your current user has at least read access to:
+Find a root-owned SUID executable that your current user has at least read access to:
 
 `find / -type f -perm 4755`
 
